@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel {
+    align-items: center;
+    justify-content: space-between;
+    perspective: 100rem;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-items {
+    position: relative;
+    width: 310px;
+    height: 310px;
+    margin: 100px auto;
+    transform-style: preserve-3d;
+    transform: translateZ(-25rem);
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
